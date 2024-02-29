@@ -5,7 +5,7 @@ public class ConsoleService {
 
      public int promptForMenuSelection() {
          int menuSelection;
-         System.out.println("Choose an option: ");
+         System.out.print("Choose an option: ");
          try {
              menuSelection = Integer.parseInt(scanner.nextLine());
          } catch (NumberFormatException e) {
@@ -15,7 +15,7 @@ public class ConsoleService {
      }
 
      public void pause() {
-         System.out.println("Press Enter to continue...");
+         System.out.print("Press Enter to continue...");
          scanner.nextLine();
      }
 
